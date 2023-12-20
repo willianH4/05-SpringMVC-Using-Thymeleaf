@@ -3,13 +3,18 @@
 <html xmlns="http://www.thymeleaf.org">
 	<head>
 		<title>Thymeleaf Demo</title>
-		<!-- reference CSS file -->
-		<link rel="stylesheet" th:href="@{/css/styles.css}" />
 	</head>
 	
 	<body>
+		<p>Hello World in Spring MVC</p>
+		<br><br>
 		
-		<p class="funny" th:text="'Time on the server is ' + ${theDate}"/>
-		
+		<p>
+			Student name: <span th:text="${param.studentName}" />
+		</p>
+		<br>
+		<p>
+			The message: <span  th:text="${message}"/>
+		</p>
 	</body>
 </html>
