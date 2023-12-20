@@ -3,6 +3,7 @@ package com.whernandez.introthymeleaf.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -43,7 +44,7 @@ public class HelloWorldController {
 		return "helloworld";
 	}
 	
-	@GetMapping("/processFormVersionThree")
+	@PostMapping("/processFormVersionThree")
 	public String processFormVersionThree(@RequestParam("studentName") String theName, Model model) {
 		
 		// convert the data to all caps
