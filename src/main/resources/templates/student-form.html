@@ -21,6 +21,10 @@
 			</select>
 			<br><br>
 			
+			<p>Favorite Programing language</p>
+			<input type="radio" th:field="*{favoriteLanguage}" th:each="tempLang : ${languages}" th:value="${tempLang}" th:text="${tempLang}"/>
+			<br><br>
+			
 			<input type="submit" value="submit"/>
 			
 		</form>
